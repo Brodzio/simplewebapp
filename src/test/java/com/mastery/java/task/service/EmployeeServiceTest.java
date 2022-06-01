@@ -92,7 +92,7 @@ public class EmployeeServiceTest {
     @DisplayName("JUnit test for updateEmployee method")
     @Test
     public void updateEmployeeTest(){
-        // given - precondition or setup
+
         willDoNothing().given(employeeDao).updateEmployee(empOne, 1L);
         empOne.setFirstName("Krzysztof");
         empOne.setLastName("Krychowiak");
